@@ -82,8 +82,7 @@ class FindFunctionsPlugin(idaapi.plugin_t):
                                 image_base = idaapi.get_imagebase()
                                 offset = func - image_base
                                 
-                                print(f"[+] Found function matching STLO: {func_name} at {hex(func)}")
-                                print(f"[+] Offset: {hex(offset)}")
+                                print(f"[+] Found function containing STLO: {func_name} at {hex(func)}")
                                 print(f"[+] StaticLoadObject Address: {hex(dword_address)}")
                                 break
 
